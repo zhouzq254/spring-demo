@@ -1,18 +1,20 @@
 package com.scnu.zzq;
 
-import com.scnu.zzq.config.AppConfig;
-import com.scnu.zzq.mapper.DemoMapper;
-import com.scnu.zzq.proxy.MapperProxy;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+/*        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         DemoMapper demoMapper = context.getBean(DemoMapper.class);
        //DemoMapper demoMapper = (DemoMapper) MapperProxy.getMapper(DemoMapper.class);
       // System.out.println(MapperProxy.getMapper(DemoMapper.class));
-       System.out.println(demoMapper.selectAll());
+       System.out.println(demoMapper.selectAll());*/
+
+        SpringApplication.run(Main.class,args);
+
     }
 }
