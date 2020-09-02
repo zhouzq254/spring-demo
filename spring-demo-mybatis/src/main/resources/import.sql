@@ -1,0 +1,2 @@
+show global variables like '%secure_file_priv%';
+load data infile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/t_c.csv' into table t_c character set gb2312 fields terminated by ',' optionally enclosed by '"' escaped by '"' lines terminated by '\r\n' IGNORE 1 LINES (id,name,content,@create_time) set create_time = date_format(@create_time,'%Y-%m-%d %h:%m:%s');
