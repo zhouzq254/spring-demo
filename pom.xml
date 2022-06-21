@@ -14,7 +14,7 @@
         <mybatis.spring.version>2.0.3</mybatis.spring.version>
         <spring.version>5.2.3.RELEASE</spring.version>
         <springboot.version>2.2.4.RELEASE</springboot.version>
-        <mysql.version>8.0.19</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
     <modules>
         <module>spring-demo-mybatis</module>
